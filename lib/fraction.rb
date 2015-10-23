@@ -1,7 +1,7 @@
 require './lib/gcd.rb' # Añadimos el fichero gcd con el MÁXIMO COMÚN DIVISOR.
 require './lib/lcm.rb' # Añadimos el fichero lcm con el MÍNIMO COMÚN MÚLTIPLO.
 
-	class fraction # Clase para la implementación de las operaciones aritméticas básicas con fracciones.
+	class Fraction # Clase para la implementación de las operaciones aritméticas básicas con fracciones.
 
 		#-----> MÉTODOS ELEMENTALES DE LA CLASE.
 
