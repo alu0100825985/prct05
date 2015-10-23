@@ -24,5 +24,6 @@ class TestFraction < Test::Unit::TestCase
    	def test_division # Pruebas unitarias para la división.
    		assert_equal([2,1], Fraction.new(2,4).division(1,4)) 
    		assert_equal([5,2], Fraction.new(2,4).division(1,5))
+   		assert_equal([94,75], Fraction.new(47,25).division(15,10))
    	end
 end
