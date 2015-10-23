@@ -31,7 +31,7 @@ require './lib/lcm.rb' # Añadimos el fichero lcm con el MÍNIMO COMÚN MÚLTIPL
 					numerator_result, denominator_result = reduction(@numerator,@denominator) # Finalmente almacenamos en dos variables ambos valores reducidos nuevamente.
 				else # CONDICIÓN: Si los denominadores no coinciden.
 					least_multiple = lcm(@denominator, denominator_reduc) # Llamada al método lcm() para hallar el mínimo común multiplo de ambos denominadores.
-					numerator_add = ((least_multiple / @denominator) * @numerator) + ((least_multiple / denominator_result) * numerator_reduc) # Dividimos el mínimo entre cada denominador y multiplicamos por su correspondiente numerador, para luego sumar ambos.
+					numerator_add = ((least_multiple / @denominator) * @numerator) + ((least_multiple / denominator_reduc) * numerator_reduc) # Dividimos el mínimo entre cada denominador y multiplicamos por su correspondiente numerador, para luego sumar ambos.
 					numerator_result, denominator_result = reduction(numerator_add, least_multiple) # Finalmente almacenamos en dos variables ambos valores reducidos nuevamente.
 				end	
 			return numerator_result, denominator_result # Devolvemos los valores resultantes.
@@ -46,7 +46,7 @@ require './lib/lcm.rb' # Añadimos el fichero lcm con el MÍNIMO COMÚN MÚLTIPL
 					numerator_result, denominator_result = reduction(@numerator,@denominator) # Finalmente almacenamos en dos variables ambos valores reducidos nuevamente.
                 else # CONDICIÓN: Si los denominadores no coinciden.
                     least_multiple = lcm(@denominator, denominator_reduc) # Llamada al método lcm() para hallar el mínimo común multiplo de ambos denominadores.
-                    numerator_substraction = ((least_multiple / @denominator) * @numerator) - ((least_multiple / denominator_result) * numerator_reduc) # Dividimos el mínimo entre cada denominador y multiplicamos por su correspondiente numerador, para luego restar ambos.
+                    numerator_substraction = ((least_multiple / @denominator) * @numerator) - ((least_multiple / denominator_reduc) * numerator_reduc) # Dividimos el mínimo entre cada denominador y multiplicamos por su correspondiente numerador, para luego restar ambos.
                     numerator_result, denominator_result = reduction(numerator_substraction, least_multiple) # Finalmente almacenamos en dos variables ambos valores reducidos nuevamente.
                 end
             return numerator_result, denominator_result # Devolvemos los valores resultantes.
