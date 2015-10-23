@@ -67,8 +67,8 @@ require './lib/lcm.rb' # Añadimos el fichero lcm con el MÍNIMO COMÚN MÚLTIPL
 
 		def division(variable_num, variable_den) # Método para realizar la división entre la fracción inicializada y otra pasada por parámetro.
 			numerator_reduc, denominator_reduc = reduction(variable_num, variable_den) # Llamada al método reduction() para reducir ambos valores.
-			@numerator = @denominator * numerator_reduc # Hacemos el producto del numerador por el denominador opuesto y los almacenamos en la variable de instancia.
-			@denominator = @numerator * denominator_reduc # Hacemos el producto del denominador y por el numerador opuesto y los almacenamos en la variable de instancia.
+			@numerator = @numerator * denominator_reduc # Hacemos el producto del numerador por el denominador opuesto y los almacenamos en la variable de instancia.
+			@denominator = @denominator * numerator_reduc # Hacemos el producto del denominador y por el numerador opuesto y los almacenamos en la variable de instancia.
 		
 			numerator_result, denominator_result = reduction(@numerator, @denominator) # Finalmente almacenamos en dos variables ambos valores reducidos nuevamente.
 			return numerator_result, denominator_result # Devolvemos los valores resultantes.
