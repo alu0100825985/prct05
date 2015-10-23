@@ -17,5 +17,6 @@ class TestFraction < Test::Unit::TestCase
 
    	def test_substraction # Pruebas unitarias para el producto.
    		assert_equal([1,8], Fraction.new(2,4).product(1,4)) 
+   		assert_equal([3,20], Fraction.new(3,4).product(1,5))
    	end
 end
